@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Welcome To Mohen's Warehouse</title>
+	</head>
+	<script> 
+	var credit, additions;
+	credit = 0;
+	
+	var myObj = { name: "Sprite", cost: 8 };
+
+	
+	
+	
+	
+	function add50() {
+		additions = 0.5
+		credit = credit + additions
+		document.getElementById("demo").innerHTML = 'R' + credit;
+	}
+	function add1() {
+		additions = 1
+		credit = credit + additions
+		document.getElementById("demo").innerHTML = 'R' + credit;
+	}
+	function add2() {
+		additions = 2
+		credit = credit + additions
+		document.getElementById("demo").innerHTML = 'R' + credit;
+	}
+	function add5() {
+		additions = 5
+		credit = credit + additions
+		document.getElementById("demo").innerHTML = 'R' + credit;
+	}
+	function sprite() {
+		cost = 8 
+		if (cost>credit) {
+			window.alert("Not Enough")
+		}
+		else{
+		credit = credit - cost
+		document.getElementById("demo").innerHTML = 'R' + credit;
+		}
+	}
+	function LaysSaltVineger() {
+		cost = 6 
+		if (cost>credit) {
+			window.alert("Not Enough")
+		}
+		else{
+		credit = credit - cost
+		document.getElementById("demo").innerHTML = 'R' + credit;
+		}
+	}
+	function LaysSourCreamandChives() {
+		cost = 6 
+		if (cost>credit) {
+			window.alert("Not Enough")
+		}
+		else{
+		credit = credit - cost
+		document.getElementById("demo").innerHTML = 'R' + credit;
+		}
+	}
+	function appletizer() {
+		cost = 12 
+		if (cost>credit) {
+			window.alert("Not Enough")
+		}
+		else{
+		credit = credit - cost
+		document.getElementById("demo").innerHTML = 'R' + credit;
+		}
+	}
+	function chappies() {
+		cost = 0.5
+		if (cost>credit) {
+			window.alert("Not Enough")
+		}
+		else{
+		credit = credit - cost
+		document.getElementById("demo").innerHTML = 'R' + credit;
+		}
+	}
+	function reset() {
+		credit = 0
+		document.getElementById("demo").innerHTML = 'R' + credit;
+	}
+	</script>
+		
+	
+	<body>
+		<h1>Welcome To Mohen's Warehouse </h1> 
+		<p id="demo"> credit </p>
+		<button type="button" onclick="add50()">Add 50c</button>
+		<button type="button" onclick="add1()">Add R1</button>
+		<button type="button" onclick="add2()">Add R2</button>
+		<button type="button" onclick="add5()">Add R5</button>
+		<button type="button" onclick="reset()">Return</button>
+
+		<br> </br>
+		<button type="button" onclick="sprite()">Sprite</button>
+		<button type="button" onclick="appletizer()">Grapetizer</button>
+		<button type="button" onclick="chappies()">Chappies</button>
+		<button type="button" onclick="LaysSaltVineger()">Lays ~ Salt & Vineger</button>
+		<button type="button" onclick="LaysSourCreamandChives()">Lays ~ Sour Cream & Chives</button>
+
+
+
+		<br> </br>
+		We stock items of <strong>every kind</strong>
+		You won't find a better <em> deal </em>
+		<ul>
+			<li> item1 </li>
+			<li> item2 </li>
+		</ul>
+		<ol>
+			<li> I am number 1 </li>
+			<li> I am number 2 </li>
+		</ol>
+
+		
+		
+		<a href="http://www.google.com"> Answers </a>
+	</body>
+</html>
