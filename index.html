@@ -39,8 +39,12 @@
 		document.getElementById("demo").innerHTML = 'R' + credit;
 	}
 	function sprite() {
+		var stock = Number(myTable.rows[1].cells[2].innerHTML);
 		cost = 8 
-		if (cost>credit) {
+		if (stock == 0) {
+			window.alert("Out of Stock")
+		}
+		else if (cost>credit) {
 			window.alert("Not Enough")
 		}
 		else{
@@ -49,8 +53,12 @@
 		}
 	}
 	function LaysSaltVineger() {
-		cost = 6 
-		if (cost>credit) {
+		var stock = Number(myTable.rows[1].cells[2].innerHTML);
+		cost = 8 
+		if (stock == 0) {
+			window.alert("Out of Stock")
+		}
+		else if (cost>credit) {
 			window.alert("Not Enough")
 		}
 		else{
@@ -59,8 +67,12 @@
 		}
 	}
 	function LaysSourCreamandChives() {
-		cost = 6 
-		if (cost>credit) {
+		var stock = Number(myTable.rows[1].cells[2].innerHTML);
+		cost = 8 
+		if (stock == 0) {
+			window.alert("Out of Stock")
+		}
+		else if (cost>credit) {
 			window.alert("Not Enough")
 		}
 		else{
@@ -69,8 +81,12 @@
 		}
 	}
 	function appletizer() {
-		cost = 12 
-		if (cost>credit) {
+		var stock = Number(myTable.rows[1].cells[2].innerHTML);
+		cost = 8 
+		if (stock == 0) {
+			window.alert("Out of Stock")
+		}
+		else if (cost>credit) {
 			window.alert("Not Enough")
 		}
 		else{
@@ -79,8 +95,12 @@
 		}
 	}
 	function chappies() {
-		cost = 0.5
-		if (cost>credit) {
+		var stock = Number(myTable.rows[1].cells[2].innerHTML);
+		cost = 8 
+		if (stock == 0) {
+			window.alert("Out of Stock")
+		}
+		else if (cost>credit) {
 			window.alert("Not Enough")
 		}
 		else{
@@ -128,7 +148,7 @@
 			<tr>
 				<td>Chappies</td>
 				<td>0.50</td>
-				<td>20</td>
+				<td>0</td>
 			</tr>
 			<tr>
 				<td>Sprite</td>
