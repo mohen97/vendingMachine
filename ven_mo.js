@@ -2,7 +2,7 @@ var credit, additions;
 credit = 0 
 
 
-	
+/* functions for adding coins */
 function add50() {
 	additions = 0.5
 	credit = credit + additions
@@ -25,6 +25,8 @@ function add5() {
 	credit = credit + additions
 	document.getElementById("demo").innerHTML = 'R' + credit;
 }
+
+/* function for selecting products */
 function sprite() {
 	var stock = Number(document.getElementById('stocktable').rows[2].cells[2].innerHTML);
 	cost = 8 ;
@@ -110,6 +112,8 @@ function chappies() {
 
 	}
 }
+
+/* functions for refreshes, restocks and returns */
 function reset() {
 	document.getElementById("wow").innerHTML = 'R' + credit + ' change was returned';
 	credit = 0
@@ -136,7 +140,8 @@ function refreshData() {
 	document.getElementById("wow").innerHTML = ' Thank you for choosing Mohen!';
 	document.getElementById("demo").innerHTML = ' Enter Coins to Continue ';
 }
-		
+
+/* function for loader */
 function displayLoader() {
 	document.getElementById("lol").style.display = "block";
 	setTimeout(function() {document.getElementById("lol").style.display = "none"}, 600);
