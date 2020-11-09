@@ -90,7 +90,7 @@ function LaysSaltVineger() {
 		credit = credit - cost
 		document.getElementById("demo").innerHTML = 'R' + credit;
 		document.getElementById('stocktable').rows[3].cells[2].innerHTML = stock - 1;
-		document.getElementById("wow").innerHTML = 'Your Appletizer was dispensed, you still have: R' + credit + 'remaining';
+		document.getElementById("wow").innerHTML = 'Your Appletizer was dispensed, you still have: R' + credit;
 
 		}
 	}
@@ -107,7 +107,7 @@ function LaysSaltVineger() {
 		credit = credit - cost
 		document.getElementById("demo").innerHTML = 'R' + credit;
 		document.getElementById('stocktable').rows[1].cells[2].innerHTML = stock - 1;
-		document.getElementById("wow").innerHTML = 'Your Chappie was dispensed, you still have: R' + credit + 'remaining';
+		document.getElementById("wow").innerHTML = 'Your Chappie was dispensed, you still have: R' + credit;
 
 		}
 	}
@@ -123,4 +123,6 @@ function LaysSaltVineger() {
 		document.getElementById('stocktable').rows[3].cells[2].innerHTML = 8;
 		document.getElementById('stocktable').rows[4].cells[2].innerHTML = 8;
 		document.getElementById('stocktable').rows[5].cells[2].innerHTML = 8;
+		document.getElementById("wow").innerHTML = 'You Are Just in Luck we are fully stocked';
+
 	}
