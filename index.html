@@ -10,6 +10,7 @@
 	</head>
 	<script> 
 	var credit, additions;
+	var message = document.getElementById("msg").innerHTMl
 	credit = 0;
 	
 
@@ -116,7 +117,7 @@
 	}
 	function reset() {
 		credit = 0
-		document.getElementById("msg").innerHTMl = 'R' + credit + "change was returned";
+		message = 'R' + credit + "change was returned";
 		document.getElementById("demo").innerHTML = 'R' + credit;
 	}
 	</script>
