@@ -2,10 +2,9 @@
 <html>
 	<head>
 		<title>Welcome To Mohen's Vending Machine</title>
+		
+		<!--functions for adding coins-->
 		<style>
-			<! -- style for the table and loader -->
-			<! --  -->
-			functions for adding coins
 			table, th, td {
   			border: 1px solid black;
 		}
@@ -15,11 +14,10 @@
   				border-top: 16px solid #3498db;
  				 width: 120px;
  				 height: 120px;
- 				 -webkit-animation: spin 2s linear infinite; /* Safari */
+ 				 -webkit-animation: spin 2s linear infinite;
 				  animation: spin 2s linear infinite;
 		}
 	
-		<! -- Safari -->
 
 			@-webkit-keyframes spin {
 			  0% { -webkit-transform: rotate(0deg); }
@@ -38,7 +36,7 @@
 	
 	
 	<body>
-		<! -- style for the table and loader -->
+		<!--CONTENT -->
 
 		<h1>Welcome To Mohen's Vending Machine </h1>
 		<br> </br>
@@ -50,12 +48,12 @@
 		<h2 id="demo"> Enter Coins to Continue </h2>
 		<div class="loader" id="lol" hidden=True></div>
 	
-		<! -- script source for functions and loader -->
+		<!--script source for functions and loader-->
 
 		<script src="ven_mo.js"></script>
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 		
-		<! -- Coin buttons -->
+		<!-- Coin buttons -->
 	
 		<button type="button" onclick="add50()">Add 50c</button>
 		<button type="button" onclick="add1()">Add R1</button>
@@ -67,7 +65,7 @@
 
 		
 		<br>
-		<! -- table for stock -->
+		<!-- table for stock -->
 		<br>
 			<table name="Table" id="stocktable">
 			<tr>
@@ -103,7 +101,7 @@
 		</table>
 		<br>
 		
-		<! -- buttons for products -->
+		<!-- buttons for products -->
 
 		<button type="button" onclick="sprite()">Sprite</button>
 		<button type="button" onclick="appletizer()">Appletizer</button>
