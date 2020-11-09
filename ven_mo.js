@@ -134,6 +134,6 @@ function LaysSaltVineger() {
 		document.getElementById('stocktable').rows[5].cells[2].innerHTML = 8;
 		document.getElementById("wow").innerHTML = ' Thank you for choosing Mohen!';
 		document.getElementById("demo").innerHTML = ' Enter Coins to Continue ';
-
+}
 		
 		
