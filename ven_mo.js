@@ -112,13 +112,14 @@ function LaysSaltVineger() {
 		}
 	}
 	function reset() {
+		displayLoader();
 		document.getElementById("wow").innerHTML = 'R' + credit + ' change was returned';
 		credit = 0
 		document.getElementById("demo").innerHTML = 'R' + credit;
 	
 }
 	function restock() {
-		displayLoader()
+		displayLoader();
 		document.getElementById('stocktable').rows[1].cells[2].innerHTML = 20;
 		document.getElementById('stocktable').rows[2].cells[2].innerHTML = 8;
 		document.getElementById('stocktable').rows[3].cells[2].innerHTML = 8;
@@ -128,7 +129,7 @@ function LaysSaltVineger() {
 
 }
 	function refreshData() {
-		displayLoader()
+		displayLoader();
 		document.getElementById('stocktable').rows[1].cells[2].innerHTML = 20;
 		document.getElementById('stocktable').rows[2].cells[2].innerHTML = 8;
 		document.getElementById('stocktable').rows[3].cells[2].innerHTML = 8;
