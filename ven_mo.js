@@ -111,7 +111,6 @@ function chappies() {
 	}
 }
 function reset() {
-	displayLoader();
 	document.getElementById("wow").innerHTML = 'R' + credit + ' change was returned';
 	credit = 0
 	document.getElementById("demo").innerHTML = 'R' + credit;
