@@ -8,120 +8,7 @@
 		}
 	</style>
 	</head>
-	<script> 
-	var credit, additions;
-	var message = document.getElementById("msg").innerHTMl;
-	var myTable = document.getElementById('Table');
-	credit = 0;
-	
-	
-	
-	function add50() {
-		additions = 0.5;
-		credit = credit + additions;
-		document.getElementById("demo").innerHTML = 'R' + credit;
-	}
-	function add1() {
-		additions = 1;
-		credit = credit + additions;
-		document.getElementById("demo").innerHTML = 'R' + credit;
-	}
-	function add2() {
-		additions = 2;
-		credit = credit + additions;
-		document.getElementById("demo").innerHTML = 'R' + credit;
-	}
-	function add5() {
-		additions = 5;
-		credit = credit + additions;
-		document.getElementById("demo").innerHTML = 'R' + credit;
-	}
-	function sprite() {
-		var stock = Number(getTable.rows[1].cells[2].innerHTML);
-		cost = 8 ;
-		if (stock == 0) {
-			window.alert("Out of Stock");
-		}
-		else if (cost>credit) {
-			window.alert("Not Enough");
-		}
-		else{
-		credit = credit - cost
-		document.getElementById("demo").innerHTML = 'R' + credit;
-		document.getElementById("msg").innerHTMl = "Your Sprite was dispensed, you still have: R" + credit + "remaining";
 
-		}
-	}
-	function LaysSaltVineger() {
-		var stock = Number(getTable.rows[1].cells[2].innerHTML);
-		cost = 8 ;
-		if (stock == 0) {
-			window.alert("Out of Stock");
-		}
-		else if (cost>credit) {
-			window.alert("Not Enough");
-		}
-		else{
-		credit = credit - cost;
-		document.getElementById("demo").innerHTML = 'R' + credit;
-		document.getElementById("msg").innerHTMl = "Your Lays ~ Salt & Vinegar was dispensed, you still have: R" + credit + "remaining";
-
-		}
-	}
-	function LaysSourCreamandChives() {
-		var stock = Number(getTable.rows[1].cells[2].innerHTML);
-		cost = 8 
-		if (stock == 0) {
-			window.alert("Out of Stock")
-		}
-		else if (cost>credit) {
-			window.alert("Not Enough")
-		}
-		else{
-		credit = credit - cost
-		document.getElementById("demo").innerHTML = 'R' + credit;
-		document.getElementById("msg").innerHTMl = "Your Lays ~ Sour Cream & Chives was dispensed, you still have: R" + credit + "remaining";
-
-		}
-	}
-	function appletizer() {
-		var stock = Number(getTable.rows[1].cells[2].innerHTML);
-		cost = 8 
-		if (stock == 0) {
-			window.alert("Out of Stock")
-		}
-		else if (cost>credit) {
-			window.alert("Not Enough")
-		}
-		else{
-		credit = credit - cost
-		document.getElementById("demo").innerHTML = 'R' + credit;
-		document.getElementById("msg").innerHTMl = "Your Appletizer was dispensed, you still have: R" + credit + "remaining";
-
-		}
-	}
-	function chappies() {
-		var stock = Number(getTable.rows[1].cells[2].innerHTML);
-		cost = 8 
-		if (stock == 0) {
-			window.alert("Out of Stock")
-		}
-		else if (cost>credit) {
-			window.alert("Not Enough")
-		}
-		else{
-		credit = credit - cost
-		document.getElementById("demo").innerHTML = 'R' + credit;
-		document.getElementById("msg").innerHTMl = "Your Chappie was dispensed, you still have: R" + credit + "remaining";
-
-		}
-	}
-	function reset() {
-		credit = 0;
-		message = 'R' + credit + 'change was returned';
-		document.getElementById("demo").innerHTML = 'R' + credit;
-	}
-	</script>
 		
 	
 	
@@ -132,9 +19,13 @@
 		<br>
 		You won't find a better <em> deal </em>
 		<br>
+		
 		<h2 id="demo"> Enter Coins to Continue </h2>
-		<h2 id="msg">Have A Wonderful</h2>
+		
 
+		<script src="ven_mo.js"></script>
+
+		
 		<button type="button" onclick="add50()">Add 50c</button>
 		<button type="button" onclick="add1()">Add R1</button>
 		<button type="button" onclick="add2()">Add R2</button>
@@ -153,7 +44,7 @@
 			<tr>
 				<td>Chappies</td>
 				<td>0.50</td>
-				<td>0</td>
+				<td>1</td>
 			</tr>
 			<tr>
 				<td>Sprite</td>
@@ -181,7 +72,7 @@
 		
 		
 		<button type="button" onclick="sprite()">Sprite</button>
-		<button type="button" onclick="appletizer()">Grapetizer</button>
+		<button type="button" onclick="appletizer()">Appletizer</button>
 		<button type="button" onclick="chappies()">Chappies</button>
 		<button type="button" onclick="LaysSaltVineger()">Lays ~ Salt & Vineger</button>
 		<button type="button" onclick="LaysSourCreamandChives()">Lays ~ Sour Cream & Chives</button>
@@ -190,13 +81,10 @@
 
 		<br>
 		<br>
-		<h2 id="msg">Have A Wonderful</h2>
 		
-		
+		<h3 id="wow"> Enter Coins to Continue </h3>
 		
 	
 	
-	
-		<a href="http://www.google.com"> Answers </a>
 	</body>
 </html>
