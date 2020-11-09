@@ -90,7 +90,7 @@ function LaysSaltVineger() {
 		credit = credit - cost
 		document.getElementById("demo").innerHTML = 'R' + credit;
 		document.getElementById('stocktable').rows[3].cells[2].innerHTML = stock - 1;
-		document.getElementById("msg1").innerHTML = 'Your Appletizer was dispensed, you still have: R' + credit + 'remaining';
+		document.getElementById("wow").innerHTML = 'Your Appletizer was dispensed, you still have: R' + credit + 'remaining';
 
 		}
 	}
@@ -107,7 +107,7 @@ function LaysSaltVineger() {
 		credit = credit - cost
 		document.getElementById("demo").innerHTML = 'R' + credit;
 		document.getElementById('stocktable').rows[1].cells[2].innerHTML = stock - 1;
-		document.getElementById("msg").innerHTML = 'Your Chappie was dispensed, you still have: R' + credit + 'remaining';
+		document.getElementById("wow").innerHTML = 'Your Chappie was dispensed, you still have: R' + credit + 'remaining';
 
 		}
 	}
