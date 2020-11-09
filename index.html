@@ -17,33 +17,33 @@
 	
 	
 	function add50() {
-		additions = 0.5
-		credit = credit + additions
+		additions = 0.5;
+		credit = credit + additions;
 		document.getElementById("demo").innerHTML = 'R' + credit;
 	}
 	function add1() {
-		additions = 1
-		credit = credit + additions
+		additions = 1;
+		credit = credit + additions;
 		document.getElementById("demo").innerHTML = 'R' + credit;
 	}
 	function add2() {
-		additions = 2
-		credit = credit + additions
+		additions = 2;
+		credit = credit + additions;
 		document.getElementById("demo").innerHTML = 'R' + credit;
 	}
 	function add5() {
-		additions = 5
-		credit = credit + additions
+		additions = 5;
+		credit = credit + additions;
 		document.getElementById("demo").innerHTML = 'R' + credit;
 	}
 	function sprite() {
 		var stock = Number(getTable.rows[1].cells[2].innerHTML);
-		cost = 8 
+		cost = 8 ;
 		if (stock == 0) {
-			window.alert("Out of Stock")
+			window.alert("Out of Stock");
 		}
 		else if (cost>credit) {
-			window.alert("Not Enough")
+			window.alert("Not Enough");
 		}
 		else{
 		credit = credit - cost
@@ -54,15 +54,15 @@
 	}
 	function LaysSaltVineger() {
 		var stock = Number(getTable.rows[1].cells[2].innerHTML);
-		cost = 8 
+		cost = 8 ;
 		if (stock == 0) {
-			window.alert("Out of Stock")
+			window.alert("Out of Stock");
 		}
 		else if (cost>credit) {
-			window.alert("Not Enough")
+			window.alert("Not Enough");
 		}
 		else{
-		credit = credit - cost
+		credit = credit - cost;
 		document.getElementById("demo").innerHTML = 'R' + credit;
 		document.getElementById("msg").innerHTMl = "Your Lays ~ Salt & Vinegar was dispensed, you still have: R" + credit + "remaining";
 
@@ -117,7 +117,7 @@
 		}
 	}
 	function reset() {
-		credit = 0
+		credit = 0;
 		message = 'R' + credit + 'change was returned';
 		document.getElementById("demo").innerHTML = 'R' + credit;
 	}
