@@ -125,4 +125,15 @@ function LaysSaltVineger() {
 		document.getElementById('stocktable').rows[5].cells[2].innerHTML = 8;
 		document.getElementById("wow").innerHTML = 'You Are Just in Luck we are fully stocked';
 
-	}
+}
+	function refreshData() {
+		document.getElementById('stocktable').rows[1].cells[2].innerHTML = 20;
+		document.getElementById('stocktable').rows[2].cells[2].innerHTML = 8;
+		document.getElementById('stocktable').rows[3].cells[2].innerHTML = 8;
+		document.getElementById('stocktable').rows[4].cells[2].innerHTML = 8;
+		document.getElementById('stocktable').rows[5].cells[2].innerHTML = 8;
+		document.getElementById("wow").innerHTML = ' Thank you for choosing Mohen!';
+		document.getElementById("demo").innerHTML = ' Enter Coins to Continue ';
+
+		
+		
