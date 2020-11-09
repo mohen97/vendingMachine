@@ -33,7 +33,7 @@ function sprite() {
 		window.alert("Out of Stock");
 	}
 	else if (cost>credit) {
-		window.alert("Not Enough");
+		window.alert("Not Enough Funds");
 	}
 	else{
 	credit = credit - cost
