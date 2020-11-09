@@ -140,9 +140,8 @@ function LaysSaltVineger() {
 }
 		
 function displayLoader() {
-		var x = document.getElementById("lol");
-		x.style.display = "block";
-		setTimeout(function() {x.style.display = "none"}, 2000);
+		document.getElementById("lol").style.display = "block";
+		setTimeout(function() {document.getElementById("lol").style.display = "none"}, 2000);
 	
 		
   }
